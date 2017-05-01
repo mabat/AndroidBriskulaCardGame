@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_multy_client"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.example.demento.briskula.ClientActivity" android:background="#1d661d"
+        android:baselineAligned="false" android:orientation="vertical">
+
+    <LinearLayout
+            android:id="@+id/firstClientLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" android:layout_weight="1">
+            <ImageButton
+                    android:layout_height="100dp" app:srcCompat="@drawable/back" android:id="@+id/oponentClientCard1"
+                    android:layout_weight="1" android:scaleType="fitXY" android:background="#1d661d"
+                    tools:layout_editor_absoluteY="0dp" tools:layout_editor_absoluteX="0dp" android:layout_width="30dp"
+                    android:clickable="false"/>
+            <ImageButton
+                    android:layout_height="100dp" app:srcCompat="@drawable/back" android:id="@+id/oponentClientCard2"
+                    android:layout_weight="1" android:scaleType="fitXY" android:background="#1d661d"
+                    tools:layout_editor_absoluteX="140dp"
+                    tools:layout_editor_absoluteY="0dp" android:layout_width="30dp" android:clickable="false"/>
+            <ImageButton
+                    android:layout_height="100dp" app:srcCompat="@drawable/back" android:id="@+id/oponentClientCard3"
+                    android:layout_weight="1" android:scaleType="fitXY" android:background="#1d661d"
+                    app:layout_constraintRight_toLeftOf="@+id/computerCard2"
+                    app:layout_constraintLeft_toRightOf="@+id/computerCard1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintHorizontal_bias="0.02" android:layout_width="30dp" android:clickable="false"/>
+        </LinearLayout>
+        <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_weight="1.92"/>
+        <ImageButton
+                android:layout_height="match_parent" android:id="@+id/gameClientCard2"
+                android:layout_weight="1" android:scaleType="fitXY" android:background="#1d661d"
+                android:visibility="visible"
+                app:layout_constraintRight_toRightOf="parent" tools:layout_editor_absoluteY="0dp"
+                android:paddingBottom="10dp" android:paddingTop="10dp"
+                android:paddingLeft="10dp" android:layout_width="20dp"/>
+        <ImageButton
+                android:id="@+id/gameClientCard1"
+                android:layout_weight="1" android:scaleType="fitXY"
+                android:layout_alignParentTop="true" android:layout_alignLeft="@+id/linearLayout"
+                android:layout_alignStart="@+id/linearLayout"
+                android:visibility="visible"
+                android:layout_height="match_parent"
+                app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent"
+                android:paddingBottom="10dp" android:paddingTop="10dp"
+                android:background="#1d661d" android:paddingRight="10dp" android:layout_width="20dp"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="bottom" android:layout_height="40dp" android:gravity="center"
+                android:textSize="@dimen/activity_horizontal_margin" android:textStyle="normal|bold"
+                android:textColor="@android:color/holo_green_light" android:id="@+id/timerClient"/>
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/secondClientLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="match_parent" tools:layout_editor_absoluteY="48dp"
+                tools:layout_editor_absoluteX="19dp" android:layout_weight="1.72" android:layout_width="40dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/oponentClientScore" android:layout_weight="1"
+                    android:gravity="top"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/playerClientScore" android:layout_weight="1"
+                    android:gravity="bottom"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" android:layout_alignParentBottom="true" android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                tools:layout_editor_absoluteY="6dp" tools:layout_editor_absoluteX="0dp" android:layout_weight="1.72">
+            <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_weight="0.90"/>
+            <ImageButton
+                    android:layout_height="150dp" android:id="@+id/briskulaClientCard"
+                    android:layout_weight="1" android:scaleType="fitXY" android:background="#1d661d"
+                    android:padding="10dp"
+                    android:clickable="false" android:layout_width="5dp"/>
+            <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_weight="0.99"/>
+            <ImageButton
+                    android:layout_height="match_parent" android:id="@+id/playerClientCard1"
+                    android:onClick="clickedPlayerClientCard1"
+                    android:layout_weight="1" android:scaleType="fitXY" android:background="#1d661d"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:visibility="visible" android:paddingLeft="10dp" android:layout_width="5dp"/>
+            <ImageButton
+                    android:layout_height="match_parent" android:id="@+id/playerClientCard2"
+                    android:onClick="clickedPlayerClientCard2"
+                    android:layout_weight="1" android:scaleType="fitXY" android:background="#1d661d"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" android:visibility="visible"
+                    android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="5dp"/>
+            <ImageButton
+                    android:layout_height="match_parent" android:id="@+id/playerClientCard3"
+                    android:onClick="clickedPlayerClientCard3"
+                    android:layout_weight="1" android:scaleType="fitXY" android:background="#1d661d"
+                    android:paddingBottom="10dp" android:paddingTop="10dp"
+                    android:visibility="visible" android:paddingRight="10dp" android:layout_width="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

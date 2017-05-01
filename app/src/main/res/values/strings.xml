@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Briskula</string>
+    <string name="singleBriskula">Single Briskula</string>
+    <string name="playerCard1">Player Card1</string>
+    <string name="playerCard2">Player Card2</string>
+    <string name="playerCard3">Player Card3</string>
+    <string name="computerCard1">Computer Card1</string>
+    <string name="computerCard2">Computer Card2</string>
+    <string name="computerCard3">ComputerCard3</string>
+    <string name="androidPlayer">Android</string>
+    <string name="player">Player</string>
+    <string name="dialogLose">Izgubio si! :(</string>
+    <string name="dialogWin">Pobjeda!! :)</string>
+    <string name="dialogDeuce">Izjednačenje!</string>
+    <string name="dialogTitle">Kraj igre</string>
+    <string name="multiplayer">Pozovi Prijatelja</string>
+    <string name="client">ClientAccept</string>
+    <string name="backButton">Pritisni ponovo za izlaz!</string>
+    <string name="message">Message</string>
+    <string name="OK">OK</string>
+    <string name="Cancel">Cancel</string>
+</resources>
